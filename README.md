@@ -18,7 +18,7 @@ y: <START><GGLS>YYN6FV2DWHFFNS6DVHEJUD8SUTFLNRBGSBWYK5MDO<END><PAD><PAD><PAD><PA
 pred: <START><GGLS>YYN6FV2DWHFFNS6DVHEJUD8SUTFLNRBGSBWYK5MDO<END>D<END>M<END><END><END>
 ```
 
-## Advanced Target
+### Advanced Target
 
 Let input x not only contains uppercases but also lowercases, but target's all letters should be all upper
 
@@ -32,6 +32,19 @@ pred: <START><GGLS>321DCBA<END>D<END>M<END><END><END>
 ```
 
 Or maybe somthing harder?
+
+### Machine Translation
+
+```shell
+# input
+x:  你 必 须 以 记 者 的 身 份 承 担 落 到 你 肩 上 的 任 务 — — 要 么 如 此 ， 要 么 装 聋 作 哑 。                                               
+# target
+y:  "You have to assume the task that falls to you as a journalist - either that or you play dumb.                                                             
+# output
+pred:  "You need to the free coalition to meet you as a journalist you for light. you play dumb.      
+```
+
+
 
 ## Pretrained Model From HuggingFace
 

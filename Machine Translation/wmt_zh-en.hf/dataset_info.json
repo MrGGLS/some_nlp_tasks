@@ -1,0 +1,61 @@
+{
+  "builder_name": "wmt_vat",
+  "citation": "@inproceedings{\n    zhan2021varianceaware,\n    title={Variance-Aware Machine Translation Test Sets},\n    author={Runzhe Zhan and Xuebo Liu and Derek F. Wong and Lidia S. Chao},\n    booktitle={Thirty-fifth Conference on Neural Information Processing Systems, Datasets and Benchmarks Track},\n    year={2021},\n    url={https://openreview.net/forum?id=hhKA5k0oVy5}\n}\n",
+  "config_name": "wmt18_zh_en",
+  "dataset_size": 438194,
+  "description": "The Variance-Aware Machine Translation corpus contains 70 small and discriminative test sets for machine translation (MT) \nevaluation called variance-aware test sets (VAT), covering 35 translation directions from WMT16 to WMT20 competitions. \nVAT is automatically created by a novel variance-aware filtering method that filters the indiscriminative test instances \nof the current MT benchmark without any human labor. Experimental results show that VAT outperforms the original WMT benchmark \nin terms of the correlation with human judgment across mainstream language pairs and test sets. Further analysis on the properties \nof VAT reveals the challenging linguistic features (e.g., translation of low-frequency words and proper nouns) for the competitive \nMT systems, providing guidance for constructing future MT test sets. \n",
+  "download_checksums": {
+    "https://github.com/NLP2CT/Variance-Aware-MT-Test-Sets/raw/main/VAT_data/wmt18/vat_newstest2018-zhen-src.zh": {
+      "num_bytes": 184758,
+      "checksum": "ab5578ec420c3bdd73500fb3ebf2696b8fa680cc24f411b0ceb4ce8d8fe73744"
+    },
+    "https://github.com/NLP2CT/Variance-Aware-MT-Test-Sets/raw/main/VAT_data/wmt18/vat_newstest2018-zhen-ref.en": {
+      "num_bytes": 237307,
+      "checksum": "52f6d370b8c000543af45cfa4d9ba6cad47d9bafd5de0c5decb3e478482a34c0"
+    },
+    "https://raw.githubusercontent.com/NLP2CT/Variance-Aware-MT-Test-Sets/main/VAT_meta/wmt18/bert-r_filter-std60.json": {
+      "num_bytes": 94478,
+      "checksum": "4e0336fc049351a0d4b6312d3f9c54b630d013ed10259407f5b3313d1887c6a3"
+    }
+  },
+  "download_size": 516543,
+  "features": {
+    "orig_id": {
+      "dtype": "int32",
+      "id": null,
+      "_type": "Value"
+    },
+    "source": {
+      "dtype": "string",
+      "id": null,
+      "_type": "Value"
+    },
+    "reference": {
+      "dtype": "string",
+      "id": null,
+      "_type": "Value"
+    }
+  },
+  "homepage": "https://github.com/NLP2CT/Variance-Aware-MT-Test-Sets",
+  "license": "https://raw.githubusercontent.com/NLP2CT/Variance-Aware-MT-Test-Sets/main/LICENSE",
+  "post_processed": null,
+  "post_processing_size": null,
+  "size_in_bytes": 954737,
+  "splits": {
+    "test": {
+      "name": "test",
+      "num_bytes": 438194,
+      "num_examples": 1592,
+      "dataset_name": "wmt_vat"
+    }
+  },
+  "supervised_keys": null,
+  "task_templates": null,
+  "version": {
+    "version_str": "0.0.0",
+    "description": null,
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}
