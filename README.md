@@ -66,6 +66,12 @@ Are these two sequences from one sentence?
 
 Where are these named entities in this ssentence?
 
+
+
+## AI Painting
+
+A web app based on gradio, use stabl diffusion model
+
 ## End
 
 Our transformer can work well without GPU but those pretrained models are not...(extremely slow)
